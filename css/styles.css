@@ -1,0 +1,497 @@
+/* gerais */
+body{
+  font-family: 'nunito';
+}
+
+p{
+  font-size: 1.5rem;
+  margin-top: 30px;
+  line-height: 2;
+}
+
+h3{
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: 50px;
+}
+
+.row{
+  margin: 0;
+}
+
+.container{
+  padding: 70px 0;
+}
+
+.fundoEscuro{
+  background-color: #060B26;
+  color: white;
+}
+
+.fundoClaro{
+  background-color: #F9F9F9;
+  color:#444;
+}
+
+.fundoEscuro p::selection,
+.fundoEscuro h3::selection,
+.fundoEscuro h2::selection,
+.fundoEscuro b::selection,
+.fundoEscuro i::selection{
+  background-color: #fff;
+  color: #060B26;
+}
+
+.fundoClaro p::selection,
+.fundoClaro h3::selection,
+.fundoClaro h2::selection,
+.fundoClaro b::selection,
+.fundoClaro i::selection,
+h1::selection{
+  background-color: #060B26;
+  color:#fff;
+}
+ 
+.main-title{
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 65px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.main-title h3{
+  font-size: 60px;
+}
+
+.fundoClaro .main-title{
+  color: #000;
+}
+
+.secao{
+  height: auto;
+  min-height: 100vh; 
+  padding-bottom: 90px; 
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
+}
+
+.btn:focus{
+  box-shadow: 0 0 0 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* barra de navegação */
+header, .navbar{
+  box-shadow:  0 5px 7px rgba(0, 0, 0, 0.1);
+  font-family: "roboto slab";
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#nav-container{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#logo{
+  width: 70px;
+}
+
+.navbar-brand{
+  padding: 0;
+  color:black;
+}
+
+.navbar-brand:hover{
+  color:black;
+}
+
+#navbar-links a {
+  color: black;
+  font-size: 20px;
+  margin: 8px 30px 8px 0;
+}
+
+#navbar-links #programacao-menu{
+  text-align: center;
+  border-radius: 15px;
+  background-color: #AF36BF;
+  color: white;
+  margin: 8px 0;
+}
+
+.dropdown-menu{
+  background-color: #42BEBC;
+}
+
+.dropdown-item:hover{
+  background-color: #67cbc9;
+}
+
+.dropdown-divider{
+  color: #AF36BF;
+}
+
+/*botão de scroll*/
+#iconSube{    
+  color:white;
+  font-size: 25px;
+}
+
+.scrollToTop{   
+  padding: 17px;
+  text-align: center;
+  position:fixed;
+  display:none;
+  bottom: 20pt;    
+  z-index: 2; 
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #42BEBC;
+}
+
+#texto-Homepage{
+  padding: 0 2rem;
+  color: white;
+  font-size: 72px;
+  font-family: Poppins;
+  font-weight: bold;
+  align-self: center;
+}
+
+#texto-vamosLa{
+  color: white;
+  font-family: Roboto slab;
+  font-size: 20px;
+  text-align:center;
+}
+
+#continuar{
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  text-decoration: none;
+  right: 0;
+  left: 0;
+}
+
+#continuar i{
+  font-size: 30px;
+  color: #42BEBC;
+}
+
+#Homepage{
+  display: flex;
+  position: relative;
+}
+
+.creditos{
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.creditos:hover{
+  color: #fff;
+}
+
+/*terapia*/
+#texto-Terapia{
+  margin-top: 30px;
+}
+
+#terapy-area{
+  background-image: url('../img/fundo-terapia.png');
+  background-size: cover;
+  height: 100%;
+}
+
+/*crispr*/
+.bolinha{
+  background-color: rgb(114, 113, 113);
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#ball-box{
+  margin-top: 50px;
+}
+
+#decoracao1, #decoracao2{
+  width: 90%;
+}
+
+#history-area{
+  text-align: right;
+}
+
+/*funcionamento*/
+#imgLocus{
+  margin: 3rem 0;  
+}
+
+/* slider */
+#carouselExampleCaptions{
+  margin-top: 50px;
+}
+
+.carousel-indicators .active{
+  background-color: #AF36BF;
+}
+
+.card-text{
+  font-size: 20px;
+  text-align: justify;
+}
+
+.card-text:last-child{
+  margin-bottom: 2em;
+}
+
+.card{
+  background-color:#060B26;
+}
+
+.card-title{
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.carousel-control-prev{
+  left: -2%;
+  width: auto;
+}
+
+.carousel-control-next{
+  right: -2%;
+  width: auto;
+}
+
+/*programação*/
+#home-programming-area{
+  color: white;
+  background-image: url('../img/fundo-textoProgramacao.png');
+  background-size: cover;
+}
+
+#home-programming-area h2{
+  margin-top: 6rem;
+  margin-left: 1.25rem;
+}
+
+/*rodapé*/
+#contact-area{
+  background-color: #7278F2;
+  color: white;
+}
+
+#contact-area p{
+  font-size: 20px;
+  margin: 10px;
+}
+
+#contact-area i {
+  color: white;
+  border: solid 1px #FFF;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#contact-area .iconsRodape a:hover{
+  color: white;
+}
+
+#copy-area{
+  background-color: #F9F9F9;
+  color: #7278F2;
+}
+
+#imgRodape{
+  width: 150px;
+}
+
+#copy-area .container {
+  padding: 10px 0;
+  text-align: center;
+}
+
+#copy-area p{
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  font-family: roboto slab;
+}
+
+#saibaMais{
+  justify-content: end;
+}
+
+.tela2{
+  display: none;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+
+  /* geral */
+  .container {
+    padding: 20px 0;
+  }
+
+  h3{
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  p{
+    font-size: 1.25rem;
+    margin-top: 30px;
+  }
+
+  .main-title{
+    font-size: 55px;
+    margin-top: 40px;
+  }
+  
+  /*aplicações*/
+  #imgAplicacoes{
+    display: none;
+  }
+
+  /*crispr*/
+  #decoracao2{
+    margin-left: 0px;
+  }
+
+  /*slider*/
+  #carouselExampleCaptions{
+    margin-top: 0;
+  }
+
+}
+
+@media(max-width: 425px){
+
+  /*geral*/
+  .main-title{
+    font-size: 45px;
+    margin-top: 40px;
+  }
+
+  /*home*/
+  #texto-Homepage{
+    font-size: 2.8rem;
+  }
+
+  /*funcionamento*/
+  .carousel-control-prev, .carousel-control-next{
+    display: none;
+  }
+
+  #text-programming-area img{
+    width: 100%;
+  }
+
+  header, .navbar{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+
+@media(max-width: 320px){
+
+  /*geral*/
+  .main-title {
+    font-size: 2em;
+  }
+
+  /*home*/
+  #texto-Homepage {
+    font-size: 2.3em;
+  }
+
+  /*rodapé*/
+  #contact-area p {
+    font-size: 18px;
+  }
+
+}
+
+@media(max-width: 577px){
+
+  /*geral*/
+  p{
+    padding: 0 1.25rem;
+    text-align: left;
+  }
+
+  h3{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 1.25rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+    border-left: 15px solid #7278F2;
+    text-align: left;
+  }
+  
+
+  /*crispr*/
+  #decoracao1, #decoracao2, .bolinha{
+    display: none;
+  }
+
+  #ball-box {
+    margin-top: 0;
+  }
+
+  /*funcionamento*/
+  #imgLocus{
+    padding: 0 1.25rem;
+  }
+
+  /*Programação*/
+  #text-programming-area svg{
+    padding: 0 1.25rem;
+  }
+
+  /*footer*/
+  #contact-area .col-sm-6{
+    justify-content: center;
+  }
+
+  .linksRodape{
+    justify-content: center;
+  }
+
+  #saibaMais{
+    margin-top: 20px;
+  }
+
+  #saibaMais p{
+    display: none;
+  }
+
+}
+
+
