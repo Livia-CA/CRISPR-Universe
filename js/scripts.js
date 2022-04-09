@@ -1,10 +1,17 @@
 $(document).ready(function(){
 
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            $('.scrollToTop').fadeIn();
+        if ($(this).scrollTop() < 500) {
+
+            $('#continuar').fadeIn();
+
+            if ($(this).scrollTop() > 100) {
+                $('.scrollToTop').fadeIn();
+            } else {
+                $('.scrollToTop').fadeOut();
+            }
         } else {
-            $('.scrollToTop').fadeOut();
+            $('#continuar').fadeOut();
         }
     });
     
@@ -22,6 +29,7 @@ $(document).ready(function(){
 
     let navBtn = $('.nav-item');
     let programmingBtn = $('#programacao-menu');
+    let logoBtn = $('#logoBtn');
 
     let terapySection = $('#terapy-area');
     let applicationSection = $('#application-area');
@@ -42,7 +50,7 @@ $(document).ready(function(){
             case 'terapy-menu':
                 scrollTo = terapySection;
                 break;
-            case 'continuar':
+            case 'continuarBtn':
                 scrollTo = terapySection;
                 break;
             case 'application-menu': 
@@ -83,5 +91,10 @@ $(document).ready(function(){
         $(".navbar-collapse").collapse('hide');
         $(".tela1").css("display", "none");
         $(".tela2").css("display", "block");
+    });
+
+    $(logoBtn).click(function() {
+        $(".tela1").css("display", "block");
+        $(".tela2").css("display", "none");
     });
 });
